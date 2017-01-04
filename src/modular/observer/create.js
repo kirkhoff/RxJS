@@ -3,7 +3,7 @@
 var noop = require('../helpers/noop');
 var AnonymousObserver = require('./anonymousobserver');
 
-function throwError(e) { throw e; }
+function throwError(e) { return false; }
 
 /**
  *  Creates an observer from the specified OnNext, along with optional OnError, and OnCompleted actions.
